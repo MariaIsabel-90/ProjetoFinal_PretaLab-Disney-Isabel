@@ -25,11 +25,16 @@ function subtrair() {
   
 
 
-  const resultado = numero1 - numero2;
+  //const resultado = numero1 - numero2;
   /* use as constantes numero 1 e numero 2 e realize a subtração entre elas.
    Em seguida, ao invés de mostrar o numero 9, mostre o resultado da operação */
-  if (isNaN(numero1) ||)
-  document.getElementById("resultadoSub").innerHTML = resultado;
+   if (isNaN(numero1) || isNaN(numero2)){
+    alert("Insira um número para podermos fazer a subtração.")
+  } else{
+    const resultado = numero1 - numero2;
+    document.getElementById("resultadoSub").innerHTML = resultado;
+  }
+  
 }
 
 function multiplicar() {
@@ -40,10 +45,16 @@ function multiplicar() {
 
 
 
-  const resultado = numero1 * numero2;
+  //const resultado = numero1 * numero2;
   /* use as constantes numero 1 e numero 2 e realize a multiplicação entre elas.
    Em seguida, ao invés de mostrar o numero 5, mostre o resultado da operação */
-  document.getElementById("resultadoMult").innerHTML = resultado;
+  if (isNaN(numero1) || isNaN(numero2)){
+    alert("Insira um número para podermos fazer a multiplicação.")
+  } else{
+    const resultado = numero1 * numero2;
+    document.getElementById("resultadoMult").innerHTML = resultado;
+  }
+  
 }
 
 function dividir() {
@@ -54,8 +65,14 @@ function dividir() {
 
 
 
-  const resultado = numero1 / numero2;
+  //const resultado = numero1 / numero2;
   /* use as constantes numero 1 e numero 2 e realize a divisão entre elas.
    Em seguida, ao invés de mostrar o numero -89, mostre o resultado da operação */
-  document.getElementById("resultadoDiv").innerHTML = resultado;
+  if (isNaN(numero1) || isNaN(numero2)){
+    alert("Insira um número para podermos fazer a divisão.")
+  } else{
+    const resultado = numero1 / numero2;
+    document.getElementById("resultadoDiv").innerHTML = resultado;
+  }
+  
 }
