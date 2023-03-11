@@ -21,7 +21,6 @@ function calcularMedia() {
   let notafinal = (nota1 + nota2 + nota3 + nota4)/4;
   let mensagem = "";
   // evite mexer no código acima!
-
   if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || isNaN(nota4)){
     alert("Favor inserir todas as notas para calcularmos a média.")
   }
@@ -41,10 +40,9 @@ function calcularMedia() {
   } else if (notafinal ===10) {
     mensagem = "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média.";
   }
-
-  if (notafinal >10){
-    alert("Insira valores de nota entre 0 e 10.")
-  }
+// Podemos usar o if da forma abaixo, sem {}, se o interior for de uma só linha.
+  if (notafinal >10) alert("Insira valores de nota entre 0 e 10.")
+  
 
 
 
