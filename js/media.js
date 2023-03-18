@@ -40,8 +40,8 @@ function calcularMedia() {
   } else if (notafinal ===10) {
     mensagem = "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média.";
   }
-// Podemos usar o if da forma abaixo, sem {}, se o interior for de uma só linha.
-  if (notafinal >10) alert("Insira valores de nota entre 0 e 10.")
+  if (nota1 >10 || nota2 >10  || nota3 > 10 || nota4 > 10){
+    alert("Insira valores de nota entre 0 e 10.")} 
   
 
 
